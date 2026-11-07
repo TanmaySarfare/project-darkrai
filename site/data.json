@@ -1,7 +1,7 @@
 {
  "label": "Nightly data",
  "asOf": "2026-10-30",
- "expectedInflation": 0.0226,
+ "expectedInflation": 0.0229,
  "months": [
   "2000-01",
   "2000-02",
@@ -337,7 +337,7 @@
    "yield": 0.0106,
    "spread": 0.001,
    "tax": "qualified",
-   "assets": 2322.478,
+   "assets": 2314.519,
    "returns": [
     null,
     null,
@@ -1346,7 +1346,7 @@
    "yield": 0.0242,
    "spread": 0.001,
    "tax": "qualified",
-   "assets": 646.619,
+   "assets": 630.01,
    "returns": [
     null,
     null,
@@ -13537,8 +13537,8 @@
  ],
  "build": {
   "rulesVersion": "v1.0",
-  "generatedAt": "2026-11-05T23:21:22+00:00",
-  "latestDailyClose": "2026-11-05",
+  "generatedAt": "2026-11-07T18:04:37+00:00",
+  "latestDailyClose": "2026-11-06",
   "yfinance": "1.5.2",
   "unverified": [
    "BCI assets $3.5 billion",
@@ -13586,11 +13586,11 @@
    "TLT assets $47.5 billion",
    "TLT expense ratio 0.15%",
    "TLT inception date 2002-07-22",
-   "VTI assets $2,322.5 billion",
+   "VTI assets $2,314.5 billion",
    "VTI expense ratio 0.03%",
    "VTI inception date 2001-05-24",
    "VTI yield 1.06%",
-   "VXUS assets $646.6 billion",
+   "VXUS assets $630.0 billion",
    "VXUS expense ratio 0.05%",
    "VXUS inception date 2011-01-26",
    "VXUS yield 2.42%"
