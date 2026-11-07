@@ -25,7 +25,7 @@ st.set_page_config(
 st.markdown(
     """
     <style>
-      header[data-testid="stHeader"] { background: transparent; }
+      header[data-testid="stHeader"] { display: none; }
       .block-container, [data-testid="stMainBlockContainer"] { padding: 0 !important; max-width: 100% !important; }
       .stApp, [data-testid="stAppViewContainer"] { background: #100D19; }
       [data-testid="stAppViewContainer"] iframe { display: block; width: 100%; height: 100vh !important; border: 0; }
