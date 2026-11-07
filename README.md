@@ -1,4 +1,4 @@
-# Three Choices
+# Project Darkrai
 
 A private web page that turns an amount into three investment choices, using the rules in the Three Choices Rule Book (v1.0). A job on GitHub runs every weekday night, fetches prices, checks them, and publishes a new `site/data.json` only if every check passes.
 
