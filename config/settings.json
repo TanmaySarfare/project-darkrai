@@ -1,0 +1,24 @@
+{
+  "rulesVersion": "v1.0",
+  "historyStart": "2000-01",
+  "stocksPerSector": 2,
+  "minFundAssetsBillions": 1.0,
+  "minFundYears": 5,
+  "stockSpreadAssumed": 0.0002,
+  "fundSpreadAssumed": 0.001,
+  "factsMaxAgeDays": 45,
+  "dailyMoveLimit": 0.25,
+  "staleTradingDays": 2,
+  "confirmedEvents": [],
+  "crossCheckSample": 5,
+  "crossCheckTolerance": 0.005,
+  "batchSize": 20,
+  "pauseSeconds": 2,
+  "userAgent": "three-choices-personal-learning-project/1.0",
+  "_notes": {
+    "stockSpreadAssumed": "Bid-ask spread used for S&P 500 stocks, which have no published median spread. Listed as an assumption in every run summary.",
+    "fundSpreadAssumed": "Used only when a fund's published median spread is blank in funds.json. Listed as an assumption.",
+    "confirmedEvents": "Add {\"ticker\": \"XYZ\", \"date\": \"YYYY-MM-DD\", \"note\": \"why\"} to accept a daily move over the limit after checking it is real, such as a stock split.",
+    "pauseSeconds": "Pause between Yahoo requests, to stay well clear of its rate limits."
+  }
+}

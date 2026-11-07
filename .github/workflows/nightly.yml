@@ -1,0 +1,54 @@
+name: Nightly data
+
+on:
+  schedule:
+    # 23:37 UTC, Monday to Friday: after the US market close, and off the top of the hour,
+    # when GitHub's scheduler is busiest and runs are most often delayed.
+    - cron: "37 23 * * 1-5"
+  workflow_dispatch: # adds a "Run workflow" button in the Actions tab
+
+permissions:
+  contents: write # lets the job commit the new data file
+
+concurrency:
+  group: nightly-data
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version: "24"
+
+      - name: Install pinned packages
+        run: pip install -r requirements.txt
+
+      - name: Run offline tests
+        run: python -m unittest discover -s tests
+
+      - name: Build data
+        env:
+          TIINGO_TOKEN: ${{ secrets.TIINGO_TOKEN }} # optional, for the monthly cross-check
+        run: python scripts/build_data.py
+
+      - name: Save data and history
+        run: |
+          git config user.name "nightly-data"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add site/data.json state
+          if git diff --cached --quiet; then
+            echo "Nothing changed."
+          else
+            git commit -m "Nightly data $(date -u +%F)"
+            git push
+          fi

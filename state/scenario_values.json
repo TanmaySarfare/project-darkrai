@@ -1,0 +1,37 @@
+{
+ "key": "508928ccef2e5828",
+ "values": {
+  "boom": {
+   "realRate": -0.06,
+   "cpi": 0.021091
+  },
+  "recession": {
+   "realRate": 0.41,
+   "cpi": 0.000914
+  },
+  "inflation": {
+   "realRate": 2.62,
+   "cpi": 0.064544
+  },
+  "disinflation": {
+   "realRate": 0.14,
+   "cpi": 0.033521
+  },
+  "dotcom": {
+   "stocks": -0.401177,
+   "rate": -2.62,
+   "realRate": null,
+   "gold": null,
+   "commodities": null,
+   "cpi": 0.074866
+  },
+  "covid": {
+   "stocks": -0.33925,
+   "rate": -0.8,
+   "realRate": 0.05,
+   "gold": -0.036168,
+   "commodities": -0.257047,
+   "cpi": -0.002176
+  }
+ }
+}

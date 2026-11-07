@@ -1,0 +1,30 @@
+{
+  "_how_it_works": "Numbers are the sourced values from the rule book. \"compute\" means the nightly job calculates it once from data over the start and end dates, then keeps it fixed for the rules version. \"assume0\" means no data exists and the value is set to zero, which the run summary lists as an assumption. Moves are decimals (0.194 = +19.4%); rate and realRate are changes in percentage points.",
+  "scenarios": [
+    { "id": "none", "name": "No change", "years": 1,
+      "stocks": 0, "rate": 0, "realRate": 0, "gold": 0, "commodities": 0, "cpi": null },
+    { "id": "boom", "name": "Boom (2017)", "start": "2016-12-30", "end": "2017-12-29", "years": 1,
+      "stocks": 0.194, "rate": -0.05, "realRate": "compute", "gold": 0.131, "commodities": 0.017, "cpi": "compute" },
+    { "id": "recession", "name": "Recession (2008)", "start": "2007-12-31", "end": "2008-12-31", "years": 1,
+      "stocks": -0.385, "rate": -1.79, "realRate": "compute", "gold": 0.043, "commodities": -0.366, "cpi": "compute" },
+    { "id": "inflation", "name": "Inflation (2022)", "start": "2021-12-31", "end": "2022-12-30", "years": 1,
+      "stocks": -0.194, "rate": 2.37, "realRate": "compute", "gold": -0.003, "commodities": 0.161, "cpi": "compute" },
+    { "id": "disinflation", "name": "Disinflation (2023)", "start": "2022-12-30", "end": "2023-12-29", "years": 1,
+      "stocks": 0.242, "rate": 0.0, "realRate": "compute", "gold": 0.130, "commodities": -0.079, "cpi": "compute" },
+    { "id": "dotcom", "name": "Dot-com crash (2000 to 2002)", "start": "1999-12-31", "end": "2002-12-31", "years": 3,
+      "stocks": "compute", "rate": "compute", "realRate": "compute", "gold": "compute", "commodities": "compute", "cpi": "compute" },
+    { "id": "covid", "name": "Covid crash (2020)", "start": "2020-02-19", "end": "2020-03-23", "years": 0.09,
+      "stocks": "compute", "rate": "compute", "realRate": "compute", "gold": "compute", "commodities": "compute", "cpi": "compute" },
+    { "id": "crash", "name": "Crash test (Fed 2026)", "years": 1,
+      "stocks": -0.58, "rate": -1.8, "realRate": "assume0", "gold": 0.043, "commodities": -0.366, "cpi": null,
+      "_note": "The Fed scenario has no gold, commodity or real-yield paths: gold and commodities use the 2008 moves, and real yields are assumed flat." }
+  ],
+  "computeSources": {
+    "stocks": "S&P 500 index closes (^GSPC) from Yahoo",
+    "rate": "10-year Treasury yield (DGS10) from FRED",
+    "realRate": "10-year real yield (DFII10) from FRED, which starts in 2003",
+    "gold": "GLD closes from Yahoo, used as the gold price; GLD starts in late 2004",
+    "commodities": "DBC closes from Yahoo, used for commodities; DBC starts in 2006",
+    "cpi": "CPI-U, not seasonally adjusted (CPIAUCNS) from FRED"
+  }
+}

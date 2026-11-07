@@ -1,0 +1,237 @@
+{
+  "_how_to_update": "Once a month, open each fund's page on its provider's site, fill or correct the facts, and set checked to that date. Rates are decimals: 0.0003 means 0.03%. Blank expenseRatio, yield, assets or inception are filled from Yahoo and listed as unverified in the run summary. Bond funds need duration and convexity from the fund page. spread is the fund's published 30-day median bid-ask spread.",
+  "checked": null,
+  "slots": {
+    "us-stock": [
+      {
+        "ticker": "VTI",
+        "name": "Vanguard Total Stock Market ETF",
+        "role": "market",
+        "tax": "qualified",
+        "expenseRatio": null,
+        "yield": null,
+        "spread": null,
+        "assets": null,
+        "inception": null
+      },
+      {
+        "ticker": "ITOT",
+        "name": "iShares Core S&P Total U.S. Stock Market ETF",
+        "tax": "qualified",
+        "expenseRatio": null,
+        "yield": null,
+        "spread": null,
+        "assets": null,
+        "inception": null
+      },
+      {
+        "ticker": "SCHB",
+        "name": "Schwab U.S. Broad Market ETF",
+        "tax": "qualified",
+        "expenseRatio": null,
+        "yield": null,
+        "spread": null,
+        "assets": null,
+        "inception": null
+      }
+    ],
+    "intl-stock": [
+      {
+        "ticker": "VXUS",
+        "name": "Vanguard Total International Stock ETF",
+        "tax": "qualified",
+        "expenseRatio": null,
+        "yield": null,
+        "spread": null,
+        "assets": null,
+        "inception": null
+      },
+      {
+        "ticker": "IXUS",
+        "name": "iShares Core MSCI Total International Stock ETF",
+        "tax": "qualified",
+        "expenseRatio": null,
+        "yield": null,
+        "spread": null,
+        "assets": null,
+        "inception": null
+      }
+    ],
+    "tsy-7-10": [
+      {
+        "ticker": "IEF",
+        "name": "iShares 7-10 Year Treasury Bond ETF",
+        "tax": "treasury",
+        "rateType": "nominal",
+        "duration": 6.86,
+        "convexity": 0.57,
+        "yield": 0.0443,
+        "factsAsOf": "2026-07-31",
+        "factsSource": "iShares fund page, as used in the workbook",
+        "expenseRatio": null,
+        "spread": null,
+        "assets": null,
+        "inception": null
+      }
+    ],
+    "tsy-20": [
+      {
+        "ticker": "TLT",
+        "name": "iShares 20+ Year Treasury Bond ETF",
+        "tax": "treasury",
+        "rateType": "nominal",
+        "duration": 14.91,
+        "convexity": 3.14,
+        "yield": 0.0528,
+        "factsAsOf": "2026-11-02",
+        "factsSource": "iShares fund page, as used in the workbook",
+        "expenseRatio": null,
+        "spread": null,
+        "assets": null,
+        "inception": null
+      }
+    ],
+    "tips": [
+      {
+        "ticker": "SCHP",
+        "name": "Schwab U.S. TIPS ETF",
+        "tax": "treasury",
+        "rateType": "real",
+        "duration": 6.2,
+        "convexity": null,
+        "expenseRatio": 0.0003,
+        "yield": 0.051,
+        "spread": 0.0004,
+        "assets": 17.441,
+        "inception": "2010-08-05",
+        "factsAsOf": "2026-11-03",
+        "factsSource": "schwabassetmanagement.com/products/schp: duration as of 2026-09-30, distribution yield (TTM) as of 2026-09-30, assets and spread as of 2026-11-03; convexity not published"
+      },
+      {
+        "ticker": "TIP",
+        "name": "iShares TIPS Bond ETF",
+        "tax": "treasury",
+        "rateType": "real",
+        "duration": 6.2,
+        "convexity": 0.74,
+        "expenseRatio": 0.0018,
+        "yield": 0.0443,
+        "spread": 0.0001,
+        "assets": 14.616,
+        "inception": "2003-12-04",
+        "factsAsOf": "2026-10-23",
+        "factsSource": "ishares.com/us/products/239467: duration, convexity, assets and spread as of 2026-10-23, 12-month trailing yield as of 2026-10-22"
+      }
+    ],
+    "gold": [
+      {
+        "ticker": "IAUM",
+        "name": "iShares Gold Trust Micro",
+        "tax": "gold",
+        "proxy": {
+          "ticker": "GLD",
+          "expenseRatio": null
+        },
+        "expenseRatio": null,
+        "yield": 0,
+        "spread": null,
+        "assets": null,
+        "inception": null
+      },
+      {
+        "ticker": "GLDM",
+        "name": "SPDR Gold MiniShares Trust",
+        "tax": "gold",
+        "proxy": {
+          "ticker": "GLD",
+          "expenseRatio": null
+        },
+        "expenseRatio": null,
+        "yield": 0,
+        "spread": null,
+        "assets": null,
+        "inception": null
+      },
+      {
+        "ticker": "IAU",
+        "name": "iShares Gold Trust",
+        "tax": "gold",
+        "expenseRatio": null,
+        "yield": 0,
+        "spread": null,
+        "assets": null,
+        "inception": null
+      }
+    ],
+    "commodities": [
+      {
+        "ticker": "PDBC",
+        "name": "Invesco Optimum Yield Diversified Commodity Strategy No K-1 ETF",
+        "tax": "commodity1099",
+        "proxy": {
+          "ticker": "DBC",
+          "expenseRatio": null
+        },
+        "expenseRatio": null,
+        "yield": null,
+        "spread": null,
+        "assets": null,
+        "inception": null
+      },
+      {
+        "ticker": "BCI",
+        "name": "abrdn Bloomberg All Commodity Strategy K-1 Free ETF",
+        "tax": "commodity1099",
+        "proxy": {
+          "ticker": "DJP",
+          "expenseRatio": null
+        },
+        "expenseRatio": null,
+        "yield": null,
+        "spread": null,
+        "assets": null,
+        "inception": null
+      },
+      {
+        "ticker": "DBC",
+        "name": "Invesco DB Commodity Index Tracking Fund",
+        "tax": "commodityK1",
+        "expenseRatio": null,
+        "yield": null,
+        "spread": null,
+        "assets": null,
+        "inception": null
+      }
+    ],
+    "bitcoin": [
+      {
+        "ticker": "IBIT",
+        "name": "iShares Bitcoin Trust ETF",
+        "tax": "bitcoin",
+        "proxy": {
+          "ticker": "BTC-USD",
+          "expenseRatio": 0
+        },
+        "expenseRatio": null,
+        "yield": 0,
+        "spread": null,
+        "assets": null,
+        "inception": null
+      },
+      {
+        "ticker": "FBTC",
+        "name": "Fidelity Wise Origin Bitcoin Fund",
+        "tax": "bitcoin",
+        "proxy": {
+          "ticker": "BTC-USD",
+          "expenseRatio": 0
+        },
+        "expenseRatio": null,
+        "yield": 0,
+        "spread": null,
+        "assets": null,
+        "inception": null
+      }
+    ]
+  }
+}
