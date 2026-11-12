@@ -13537,8 +13537,8 @@
  ],
  "build": {
   "rulesVersion": "v1.0",
-  "generatedAt": "2026-11-11T02:57:50+00:00",
-  "latestDailyClose": "2026-11-10",
+  "generatedAt": "2026-11-12T04:06:12+00:00",
+  "latestDailyClose": "2026-11-11",
   "yfinance": "1.5.2",
   "unverified": [
    "BCI assets $3.5 billion",
