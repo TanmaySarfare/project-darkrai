@@ -1,7 +1,7 @@
 {
  "label": "Nightly data",
  "asOf": "2026-10-30",
- "expectedInflation": 0.0225,
+ "expectedInflation": 0.0226,
  "months": [
   "2000-01",
   "2000-02",
@@ -13537,8 +13537,8 @@
  ],
  "build": {
   "rulesVersion": "v1.0",
-  "generatedAt": "2026-11-17T05:14:15+00:00",
-  "latestDailyClose": "2026-11-16",
+  "generatedAt": "2026-11-18T04:41:02+00:00",
+  "latestDailyClose": "2026-11-17",
   "yfinance": "1.5.2",
   "unverified": [
    "BCI assets $3.5 billion",
